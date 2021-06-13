@@ -1,0 +1,11 @@
+{
+  "name": "nodewindows",
+  "version": "1",
+  "description": "installer",
+  "main": "index.js",
+  "author": "turay",
+  "license": "MIT",
+  "dependencies": {
+    "node-windows": "^1.0.0-beta.5"
+  }
+}
