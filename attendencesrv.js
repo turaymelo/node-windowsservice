@@ -2,9 +2,9 @@ var Service = require('node-windows').Service;
 
 // Create a new service object
 var svc = new Service({
-    name:'AttendanceApi',
+    name:'AttendanceSrv',
     description: 'The nodejs.org example web server.',
-    script: 'C:\\Rainbow\\biostar-app\\attendance\\backend\\dist\\server.js'    
+    script: 'C:\\Rainbow\\biostar-app\\node-scheduler\\punchschedulejob.js'    
   });
 
 
@@ -18,5 +18,6 @@ svc.on('install',function(){
     console.log('install started ');
   });
   
-  svc.install();
+  svc.uninstall();
+  //svc.install();
   console.log('install complete.');
